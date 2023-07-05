@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk Entry</title>
+    <link rel="stylesheet" href="../css/admin.css?v=<?php echo time (); ?>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="../admin.php">Home</a>
+            <a href="../Vendor/Vendor.php">Vendor</a>
+            <a href="../BOM/BOM.php">BOM</a>
+            <a href="produk.php">Produk</a>
+            <a href="../Purchasing/Purchasing.php">Purchasing</a>
+            <a href="../ROQ/ROQ.php">ROQ</a>
+            <a href="../Customer/Customer.php">Customer</a>
+            <a href="../Produksi/Produksi.php">Produksi</a>
+            <a href="../bahan/bahan.php">Bahan</a>
+            <a href="../accounting/accounting.php">Accounting</a>
+        </div>
+        <div class="right_content">
+            <div class="navbar">
+                <img src="asset/" alt="" />
+                <button class="btn">
+                    <a href="logout.html">Logout</a>
+                </button>
+            </div>
+            <div class="content">
+                <h3>Input Produk</h3>
+                <div class="form-login">
+                    <form action="Produk-proses.php" method="post" enctype="multipart/form-data">
+                        <label for="produk">nama produk</label>
+                        <input class="input" type="text" name="nama" id="nama" placeholder="nama" />
+                        <label for="produk">jumlah</label>
+                        <input class="input" type="text" name="jumlah" id="jumlah" placeholder="jumlah" />
+                        <label for="produk">ukuran ( M )</label>
+                        <input class="input" type="text" name="ukuran" id="ukuran" placeholder="ukuran" />
+                        <label for="produk">harga</label>
+                        <input class="input" type="text" name="harga" id="harga" placeholder="harga" />
+                        <label for="photo">Photo</label>
+                        <input type="file" name="photo" id="photo" style="margin-bottom: 20px" />
+                        <button type="submit" class="btn btn-simpan" name="simpan">Simpan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

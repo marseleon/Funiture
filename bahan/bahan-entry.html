@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>bahan Entry</title>
+    <link rel="stylesheet" href="../css/admin.css?v=<?php echo time (); ?>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="../admin.php">Home</a>
+            <a href="../Vendor/Vendor.php">Vendor</a>
+            <a href="../BOM/BOM.php">BOM</a>
+            <a href="../Produk/produk.php">Produk</a>
+            <a href="../Purchasing/Purchasing.php">Purchasing</a>
+            <a href="../ROQ/ROQ.php">ROQ</a>
+            <a href="../Customer/Customer.php">Customer</a>
+            <a href="../Produksi/Produksi.php">Produksi</a>
+            <a href="bahan.php">bahan</a>
+            <a href="../accounting/accounting.php">Accounting</a>
+        </div>
+        <div class="right_content">
+            <div class="navbar">
+                <img src="assets/logo.png" alt="" />
+                <button class="btn">
+                    <a href="logout.html">Logout</a>
+                </button>
+            </div>
+            <div class="content">
+                <h3>Input bahan</h3>
+                <div class="form-login">
+                    <form action="bahan-proses.php" method="post" enctype="multipart/form-data">
+                        <label for="nama bahan">Nama Bahan</label>
+                        <input class="input" type="text" name="nama bahan" id="nama bahan" placeholder="nama bahan" />
+                        <label for="satuan bahan">Satuan Bahan</label>
+                        <input class="input" type="text" name="satuan_bahan" id="satuan_bahan" placeholder="satuan_bahan" />
+                        <label for="jumlah">Jumlah</label>
+                        <input class="input" type="text" name="jumlah" id="jumlah" placeholder="jumlah" />
+                        <label for="harga">Harga</label>
+                        <input class="input" type="text" name="harga" id="harga" placeholder="Harga" />
+                        <button type="submit" class="btn btn-simpan" name="simpan">Simpan </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
